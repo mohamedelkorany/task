@@ -1,1 +1,17 @@
+on:
+  push:
+    branches:
+      - master 
 
+
+
+
+
+jops:
+  build:
+    run on: ubuntu-latest
+
+  steps:
+    - name: 'testing 1'
+      run: pwd  
+    
