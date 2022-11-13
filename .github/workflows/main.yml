@@ -9,9 +9,9 @@ on:
 
 jobs:
   build:
-    run on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-  steps:
-    - name: 'testing 1'
-      run: pwd  
+    steps:
+      - name: 'testing 1'
+        run: pwd  
     
