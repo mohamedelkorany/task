@@ -15,11 +15,16 @@ jobs:
       - name: 'testing 1'
         run: pwd  
     
-      - uses: action/checkout@v3
+
+      - uses: actions/checkout@v3
       - name: 'show folder'
         run: ls -a
+
+
       - name: 'login to the docker'
         run: docker login --username ${{ secrets.USERNAME }} --password ${{ secrets.DOCKERPASSWORD }}
+
+
       - name: 'building image'
         run: docker build -t ${{ secrets.USERNAME }}/firstimage .
       - name: 'push docker image'
